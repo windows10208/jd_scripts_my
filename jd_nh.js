@@ -98,7 +98,7 @@ async function jdNh() {
   await getActContent(true)
   if($.userInfo.score>=5000){
     console.log(`大于5000金币，去抽奖`)
-    await draw()
+    // await draw()
   }
   await showMsg();
 }
