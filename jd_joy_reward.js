@@ -114,7 +114,7 @@ async function joyReward() {
             } else {
                 rewardNum = joyRewardName;
             }
-            rewardNum = 0;
+            rewardNum = 20;
             let giftSaleInfos = 'beanConfigs0';
             let time = new Date($.getExchangeRewardsRes['currentTime']).getHours();
             if (time >= 0 && time < 8) {
