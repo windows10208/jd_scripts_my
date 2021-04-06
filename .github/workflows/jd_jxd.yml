@@ -6,7 +6,7 @@ name: jd_jxd
 on:
 
   schedule:
-    - cron: '0 0,8,12 * * *'
+    - cron: '0 0 * * *'
   watch:
     types: started
   repository_dispatch:
@@ -49,3 +49,4 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_JXD_EXCHANGE: true
