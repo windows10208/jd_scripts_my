@@ -92,6 +92,7 @@ async function jdCash() {
     await getReward('2');
     $.exchangeBeanNum = 0;
     cash_exchange = $.isNode() ? (process.env.CASH_EXCHANGE ? process.env.CASH_EXCHANGE : `${cash_exchange}`) : ($.getdata('cash_exchange') ? $.getdata('cash_exchange') : `${cash_exchange}`);
+    cash_exchange = false;
     if (cash_exchange === 'true') {
         console.log(`\n\n开始花费2元红包兑换200京豆，一周可换四次`)
         for (let item of ["-1", "0", "1", "2", "3"]) {
